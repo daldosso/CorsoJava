@@ -1,4 +1,4 @@
-package adaldosso;
+package adaldosso.calc;
 
 /**
  *
