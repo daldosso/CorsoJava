@@ -1,13 +1,22 @@
 package adaldosso.quantospendi;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Alberto Dal Dosso
  */
 class CategorieManager {
+    
+    List<Categoria> categorie = new ArrayList<>();
 
-    void add() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void add(Categoria categoria) {
+        categorie.add(categoria);
+    }
+
+    public int categorieCount() {
+        return categorie.size();
     }
 
 }

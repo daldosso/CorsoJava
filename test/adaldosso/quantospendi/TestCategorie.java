@@ -8,11 +8,19 @@ import org.junit.Test;
  * @author daldosso
  */
 public class TestCategorie {
+    
+    private final CategorieManager categorieManager = new CategorieManager();
 
     @Test
     public void testCreate() {
-        CategorieManager categorieManager = new CategorieManager();
         Assert.assertTrue(categorieManager != null);
-        categorieManager.add();
+    }
+    
+    @Test
+    public void testCategorie() {
+        Categoria auto = new Categoria("AUTO", "Automobile");
+        categorieManager.add(auto);
+        Assert.assertTrue(categorieManager.categorieCount() > 0);
+        
     }
 }
